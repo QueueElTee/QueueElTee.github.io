@@ -6,3 +6,9 @@ img {
     width: 100vh;
     height: 90vh;
 }
+
+@media screen and (max-width:480px) {
+    img {
+        width: 300px;
+    }
+}
