@@ -1,3 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 body {
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.top {
+    width: 80%;
+    margin: 40px 0 40px 70px;
+}
+
+.top h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+
+.top h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    font-weight: 300;
+    color: lightslategray;
+    font-size: 1.7rem;
+    line-height: 0.7;
+}
+
+.bottom {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom .box-1 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.bottom .box-1 .s1 {
+    font-size: 2rem;
+}
+
+.bottom .box-1 .s2 {
+    position: relative;
+    bottom: 5px;
+}
+
+.bottom .box-1 a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    display: inline-block;
+}
+
+.bottom .box-1 a:hover {
+    border: 1px solid hsl(71, 73%, 40%);
+    background-color: hsl(71, 73%, 40%);
+    transition: 1s;
+}
+
+.bottom .box-2 {
+    background-color: hsl(179, 62%, 55%);
+}
+
+.bottom .box-2 p {
+    line-height: 1;
+}
+
+.container {
+    margin-left: 70px;
+}
+
+.container h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 375px) {
+    .top {
+        margin: auto;
+    }
+    .top h1 {
+        font-size: 1.7rem;
+    }
+    .top h2 {
+        font-size: 1.2rem;
+    }
+    .top p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .bottom .box-1 {
+        height: 350px;
+    }
+    .bottom {
+        grid-template-columns: 1fr;
+    }
 }
