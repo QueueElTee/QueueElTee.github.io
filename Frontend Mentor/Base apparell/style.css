@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     display: flex;
 }
@@ -16,10 +21,71 @@ body {
     margin-right: 7rem;
 }
 
+.content-header {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.2rem;
+}
+
+h2:first-child {
+    font-weight: 100;
+    color: hsl(0, 36%, 70%);
+}
+
+.content-body {
+    margin-top: 2rem;
+    width: 66%;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: hsl(0, 36%, 70%);
+}
+
+form {
+    margin-top: 3rem;
+}
+
+form input {
+    height: 2.4rem;
+    width: 50%;
+    border: 1px solid lightgrey;
+    border-radius: 5.2rem;
+}
+
+form input[type="email"]::placeholder {
+    position: relative;
+    left: 1rem;
+}
+
+form button {
+    height: 2.6rem;
+    width: 12%;
+    border-radius: 5.2rem;
+    border: 1px solid lightgrey;
+    position: relative;
+    top: 0.25rem;
+    right: 3rem;
+    background-color: hsl(0, 36%, 60%);
+    transition: all 1s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 36%, 70%);
+}
+
 .box-2 {
     flex: 3;
 }
 
 .box-2 img {
     height: 100vh;
+}
+
+#empty {
+    color: red;
+    font-size: 0.9rem;
+}
+
+span {
+    color: red;
 }
