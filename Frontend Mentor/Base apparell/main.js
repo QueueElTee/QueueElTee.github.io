@@ -13,6 +13,7 @@ function validate(e) {
     if (email.value.match(mailformat)) {
         error1.textContent = '';
         email.style.border = '1px solid lightgrey';
+        email.value = '';
     } else {
         email.style.border = '1px solid red';
         error1.textContent = 'Please provide a valid email';
