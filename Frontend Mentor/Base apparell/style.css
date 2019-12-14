@@ -81,6 +81,10 @@ form button:hover {
     height: 100vh;
 }
 
+.img2 {
+    display: none;
+}
+
 #empty {
     color: red;
     font-size: 0.9rem;
@@ -88,4 +92,48 @@ form button:hover {
 
 span {
     color: red;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        display: grid;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: block;
+    }
+    .box-2 img {
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+        bottom: 28rem;
+    }
+    .box-1 {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+    .move {
+        position: relative;
+        top: 13rem;
+    }
+    .content-header {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .content-body {
+        text-align: center;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    form input {
+        width: 83%;
+    }
+    form button {
+        width: 15%;
+    }
 }
