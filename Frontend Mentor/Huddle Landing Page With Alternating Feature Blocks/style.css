@@ -9,12 +9,7 @@ p {
   font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -105,10 +100,10 @@ nav button:hover {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 25px;
+  grid-gap: 40px;
 }
 
-.cards-content > * {
+.cards-content>* {
   width: 100%;
   height: 360px;
   /* border: 2px solid black; */
@@ -211,7 +206,7 @@ footer {
   color: white;
 }
 
-.info > * {
+.info>* {
   display: flex;
   margin-bottom: 25px;
 }
@@ -234,8 +229,7 @@ footer {
   font-size: 16px;
 }
 
-.link-1 li,
-.link-2 li {
+.link-1 li, .link-2 li {
   margin-bottom: 30px;
 }
 
@@ -307,7 +301,7 @@ footer {
   .header-content section button {
     align-content: center;
   }
-  .header-content > * {
+  .header-content>* {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -315,19 +309,18 @@ footer {
   .cards-content {
     width: 90%;
   }
-  .cards-content > * {
+  .cards-content>* {
     padding-left: 30px;
   }
 }
 
 @media (max-width: 550px) {
-  .cards-content > * {
+  .cards-content>* {
     flex-direction: column;
     height: 550px;
     justify-content: space-around;
   }
-  .card-1,
-  .card-3 {
+  .card-1, .card-3 {
     flex-direction: column-reverse;
   }
   .cards-content section {
@@ -388,7 +381,7 @@ footer {
   .header-content section button {
     font-size: 13px;
   }
-  .cards-content > * {
+  .cards-content>* {
     height: 600px;
     padding-left: 10px;
     padding-right: 10px;
@@ -420,11 +413,9 @@ footer {
   .footer-content .logo {
     width: 150px;
   }
-  .info p,
-  .links li a {
+  .info p, .links li a {
     font-size: 16px;
   }
-
   .social {
     margin: auto;
   }
