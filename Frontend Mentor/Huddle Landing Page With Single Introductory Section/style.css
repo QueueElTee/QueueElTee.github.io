@@ -1,0 +1,148 @@
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("images/bg-desktop.svg") no-repeat center center/cover fixed;
+    width: 100%;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+}
+
+.container-content {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+.main-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    grid-gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+.main-content section h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+.main-content section p {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.main-content section button {
+    color: hsl(257, 40%, 49%);
+    padding: 7px 30px 7px 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+}
+
+.social span {
+    display: none;
+}
+
+.social a {
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.social a i {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width: 760px) {
+    .logo {
+        width: 200px;
+    }
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+    .main-content section {
+        text-align: center;
+    }
+    .main-content section h2 {
+        font-size: 2.3rem;
+        font-weight: 400;
+    }
+    .social {
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background: url("images/bg-mobile.svg") no-repeat center center/cover fixed;
+        width: 100%;
+        background-color: hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+    .container-content {
+        width: 85%;
+    }
+    .logo {
+        width: 125px;
+    }
+    .main-content section h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .main-content section p {
+        font-size: 16px;
+    }
+    .main-content section button {
+        font-size: 14px;
+        width: 60%;
+    }
+    .social {
+        margin-top: 60px;
+    }
+    .social a {
+        padding: 5px;
+    }
+    .social a i {
+        font-size: 15px;
+    }
+}
