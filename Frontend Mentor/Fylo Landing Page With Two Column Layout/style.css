@@ -9,13 +9,7 @@ body {
   font-size: 16px;
 }
 
-nav,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+nav, h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -74,8 +68,7 @@ nav ul li a {
   flex-direction: row;
 }
 
-.row-1 input,
-.row-1 button {
+.row-1 input, .row-1 button {
   border-radius: 5px;
 }
 
@@ -206,8 +199,7 @@ nav ul li a {
   flex-direction: column;
 }
 
-.early-access input,
-.early-access button {
+.early-access input, .early-access button {
   border-radius: 5px;
 }
 
@@ -242,8 +234,7 @@ footer {
   justify-content: space-between;
 }
 
-.contact-us .phone,
-.contact-us .email {
+.contact-us .phone, .contact-us .email {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -251,8 +242,7 @@ footer {
   align-items: center;
 }
 
-.phone p,
-.email p {
+.phone p, .email p {
   margin-left: 10px;
 }
 
@@ -293,6 +283,7 @@ footer {
 }
 
 /* Media Queries */
+
 @media (max-width: 1000px) {
   .footer-content .link-1 {
     margin-left: 50px;
@@ -313,34 +304,26 @@ footer {
   header {
     padding: 55px 40px 0px 40px;
   }
-  .row-1,
-  .row-2 {
+  .row-1, .row-2 {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
-  .row-1 img,
-  .row-2 img {
+  .row-1 img, .row-2 img {
     order: 1;
   }
-  .row-1 section,
-  .row-2 section {
+  .row-1 section, .row-2 section {
     order: 2;
   }
-
-  .row-2 section h2,
-  .row-2 section p {
+  .row-2 section h2, .row-2 section p {
     text-align: center;
   }
-
   .row-1 form {
     justify-content: center;
   }
-
   .row-2 {
     padding-left: 40px;
     padding-right: 40px;
   }
-
   .row-2 section p {
     color: hsl(0, 0%, 75%);
   }
@@ -351,23 +334,22 @@ footer {
   .row-2 section .card img {
     text-align: left;
   }
-
   .row-2 section .card p {
     text-align: left;
   }
-
   .image-section img {
     position: relative;
     left: 0;
   }
-
   .image-section .text {
     order: 2;
   }
-
   .early-access {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+  .row-2 section .card p {
+    color: black;
   }
 }
 
@@ -384,8 +366,7 @@ footer {
   .row-2 section h2 {
     font-size: 1.6rem;
   }
-  .row-1 section p,
-  .row-2 section p {
+  .row-1 section p, .row-2 section p {
     font-size: 16px;
   }
   .early-access {
@@ -401,6 +382,7 @@ footer {
     margin: auto;
   }
 }
+
 @media (max-width: 450px) {
   .logo {
     width: 100px;
@@ -410,6 +392,7 @@ footer {
     font-size: 15px;
   }
 }
+
 @media (max-width: 375px) {
   header {
     padding-left: 30px;
@@ -425,9 +408,7 @@ footer {
     text-align: center;
     font-weight: bold;
   }
-
-  .row-1 section p,
-  .row-2 section p {
+  .row-1 section p, .row-2 section p {
     font-size: 15px;
     text-align: center;
   }
@@ -470,8 +451,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .early-access input,
-  .early-access button {
+  .early-access input, .early-access button {
     width: 80%;
   }
   .footer-content {
