@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social Media Dashboard With Theme Switcher</title>
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="dashboard">
+          <h1 class="primary">Social Media Dashboard</h1>
+          <p class="secondary bold">Total Followers: 23,004</p>
+        </div>
+        <hr />
+        <div class="button">
+          <p class="secondary bold">Dark Mode</p>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Big Cards -->
+    <div class="big-cards-container">
+      <div class="card card-1">
+        <div class="username">
+          <img src="images/icon-facebook.svg" alt="Facebook" />
+          <p class="secondary bold small">@nathanf</p>
+        </div>
+        <p class="primary followers bold">1987</p>
+        <p class="secondary small info">FOLLOWERS</p>
+        <div class="status">
+          <img src="images/icon-up.svg" alt="icon-up" />
+          <p class="status-green bold small">12 Today</p>
+        </div>
+      </div>
+      <div class="card card-2">
+        <div class="username">
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+          <p class="secondary bold small">@nathanf</p>
+        </div>
+        <p class="primary followers bold">1044</p>
+        <p class="secondary small info">FOLLOWERS</p>
+        <div class="status">
+          <img src="images/icon-up.svg" alt="icon-up" />
+          <p class="status-green bold small">99 Today</p>
+        </div>
+      </div>
+      <div class="card card-3">
+        <div class="username">
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+          <p class="secondary bold small">@nathanf</p>
+        </div>
+        <p class="primary followers bold">11k</p>
+        <p class="secondary small info">FOLLOWERS</p>
+        <div class="status">
+          <img src="images/icon-up.svg" alt="icon-up" />
+          <p class="status-green bold small">1099 Today</p>
+        </div>
+      </div>
+      <div class="card card-4">
+        <div class="username">
+          <img src="images/icon-youtube.svg" alt="Youtube" />
+          <p class="secondary bold small">@nathanf</p>
+        </div>
+        <p class="primary followers bold">8239</p>
+        <p class="secondary small info">SUBSCRIBERS</p>
+        <div class="status">
+          <img src="images/icon-down.svg" alt="icon-down" />
+          <p class="status-red bold small">144 Today</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="overview">
+      <div class="overview-content">
+        <h2 class="secondary bold">Overview - Today</h2>
+      </div>
+    </div>
+
+    <!-- Small Cards -->
+    <div class="small-cards-container">
+      <div class="card card-1">
+        <div class="interaction">
+          <p class="secondary bold small">Page Views</p>
+          <img src="images/icon-facebook.svg" alt="Facebook" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">87</p>
+          <div class="icon">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="status-green small bold">3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-2">
+        <div class="interaction">
+          <p class="secondary bold small">Likes</p>
+          <img src="images/icon-facebook.svg" alt="Facebook" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">52</p>
+          <div class="icon">
+            <img src="images/icon-down.svg" alt="icon-down" />
+            <p class="status-red small bold">2%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-3">
+        <div class="interaction">
+          <p class="secondary bold small">Likes</p>
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">5462</p>
+          <div class="icon">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="status-green small bold">2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-4">
+        <div class="interaction">
+          <p class="secondary bold small">Profile Views</p>
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">54k</p>
+          <div class="icon">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="status-green small bold">1375%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-5">
+        <div class="interaction">
+          <p class="secondary bold small">Retweets</p>
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">117</p>
+          <div class="icon">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="status-green small bold">303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-6">
+        <div class="interaction">
+          <p class="secondary bold small">Likes</p>
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">507</p>
+          <div class="icon">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="status-green small bold">553%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-7">
+        <div class="interaction">
+          <p class="secondary bold small">Likes</p>
+          <img src="images/icon-youtube.svg" alt="Youtube" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">107</p>
+          <div class="icon">
+            <img src="images/icon-down.svg" alt="icon-down" />
+            <p class="status-red small bold">19%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-8">
+        <div class="interaction">
+          <p class="secondary bold small">Total Views</p>
+          <img src="images/icon-youtube.svg" alt="Youtube" />
+        </div>
+        <div class="percentage">
+          <p class="primary bold followers">1407</p>
+          <div class="icon">
+            <img src="images/icon-down.svg" alt="icon-down" />
+            <p class="status-red small bold">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
