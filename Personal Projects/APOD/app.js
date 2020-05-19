@@ -10,7 +10,13 @@ req.addEventListener("load", () => {
     var response = JSON.parse(req.responseText);
     document.querySelector("#title").textContent = response.title;
     document.querySelector("#date").textContent = response.date;
-    document.querySelector("iframe").src = response.url;
+    if ((response.media_type = "image")) {
+      document.querySelector("iframe").style.display = "none";
+      document.querySelector("img").src = response.url;
+    } else {
+      document.querySelector("img").style.display = "none";
+      document.querySelector("iframe").src = response.url;
+    }
     document.querySelector("#description").textContent = response.explanation;
   }
 });
