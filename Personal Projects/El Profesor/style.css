@@ -25,6 +25,7 @@ header {
     height: 85vh;
     background-image: url('img/img_2.jpg');
     background-size: 100% 100%;
+    position: relative;
 }
 
 .logo-section {
@@ -48,10 +49,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    /* padding-top: 9rem; */
     text-align: center;
+    align-content: center;
     text-transform: uppercase;
-    transform: translateY(230px);
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    bottom: 2rem;
+    width: 80%;
 }
 
 .titles .tv-title {
@@ -168,9 +173,9 @@ footer a:hover {
     .logo-section .netflix {
         height: 60px;
     }
-    .titles {
+    /* .titles {
         transform: translateY(290px);
-    }
+    } */
     .titles .tv-title {
         font-size: 4rem;
     }
