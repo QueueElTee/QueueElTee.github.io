@@ -1,210 +1,221 @@
 :root {
-    --light-red: #D62E46;
-    --dark-red: #671A1E;
-    --primary: #fff;
-    --secondary: #000;
-    --font-text: 'Roboto', sans-serif;
-    --font-quote-author: 'Metal Mania', cursive;
-    --font-quote-symbols: 'Revalia', cursive;
-    --font-quote-text: 'Roboto Condensed', sans-serif;
+  --light-red: #d62e46;
+  --dark-red: #671a1e;
+  --primary: #fff;
+  --secondary: #000;
+  --font-text: "Roboto", sans-serif;
+  --font-quote-author: "Metal Mania", cursive;
+  --font-quote-symbols: "Revalia", cursive;
+  --font-quote-text: "Roboto Condensed", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--light-red);
-    font-family: var(--font-text);
+  background-color: var(--light-red);
+  font-family: var(--font-text);
 }
 
 header {
-    width: 100%;
-    height: 85vh;
-    background-image: url('img/img_2.jpg');
-    background-size: 100% 100%;
-    position: relative;
+  width: 100%;
+  height: 85vh;
+  background-image: url("img/img_2.jpg");
+  background-size: 100% 100%;
+  position: relative;
 }
 
 .logo-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem 0 1.5rem;
 }
 
 .logo-section .dali {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .logo-section .netflix {
-    height: 80px;
+  height: 80px;
 }
 
 .titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    align-content: center;
-    text-transform: uppercase;
-    right: 50%;
-    transform: translateX(50%);
-    position: absolute;
-    bottom: 2rem;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  bottom: 0rem;
+  width: 80%;
 }
 
 .titles .tv-title {
-    font-size: 5rem;
-    font-family: 'Staatliches', cursive;
+  font-size: 5rem;
+  font-family: "Staatliches", cursive;
 }
 
 .titles .tv-title span {
-    background-color: var(--light-red);
-    color: var(--primary);
+  background-color: var(--light-red);
+  color: var(--primary);
 }
 
 .titles .alias {
-    font-family: var(--font-quote-author);
-    font-size: 3rem;
-    color: var(--light-red);
+  font-family: var(--font-quote-author);
+  font-size: 3rem;
+  color: var(--light-red);
 }
 
 .titles .alias span {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .titles .name {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    color: #A94823;
-    font-family: var(--font-quote-author);
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #a94823;
+  font-family: var(--font-quote-author);
 }
 
 .titles hr {
-    width: 30%;
+  width: 30%;
 }
 
 main {
-    width: 80%;
-    margin: auto;
-    margin-top: 3rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
 }
 
-.section-1, .section-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.5rem;
-    align-items: center;
+.section-1,
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  align-items: center;
 }
 
-.section-1 .text p, .section-2 .text p {
-    line-height: 1.5;
+.section-1 .text p,
+.section-2 .text p {
+  line-height: 1.5;
 }
 
-.section-1 .text .first-p::first-letter, .section-2 .text .first-p::first-letter {
-    color: var(--dark-red);
-    font-size: 2.5rem;
+.section-1 .text .first-p::first-letter,
+.section-2 .text .first-p::first-letter {
+  color: var(--dark-red);
+  font-size: 2.5rem;
 }
 
-.section-1 .text .second-p, .section-2 .text .second-p {
-    margin-top: 0.8rem;
+.section-1 .text .second-p,
+.section-2 .text .second-p {
+  margin-top: 0.8rem;
 }
 
-.section-1 .image-quote img, .section-2 .image-quote img {
-    width: 100%;
+.section-1 .image-quote img,
+.section-2 .image-quote img {
+  width: 100%;
 }
 
-.section-1 .image-quote .quote, .section-2 .image-quote .quote {
-    margin-top: 1.5rem;
-    font-size: 2rem;
-    font-family: var(--font-quote-symbols);
-    color: var(--dark-red);
+.section-1 .image-quote .quote,
+.section-2 .image-quote .quote {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--font-quote-symbols);
+  color: var(--dark-red);
 }
 
-.section-1 .image-quote .quote span, .section-2 .image-quote .quote span {
-    color: var(--secondary);
-    font-family: var(--font-quote-text);
+.section-1 .image-quote .quote span,
+.section-2 .image-quote .quote span {
+  color: var(--secondary);
+  font-family: var(--font-quote-text);
 }
 
-.section-1 .image-quote .byline, .section-2 .image-quote .byline {
-    font-family: var(--font-quote-author);
-    font-size: 1.1rem;
-    margin-top: 0.8rem;
+.section-1 .image-quote .byline,
+.section-2 .image-quote .byline {
+  font-family: var(--font-quote-author);
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
 }
 
 .section-2 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .section-2 .text {
-    order: 2;
+  order: 2;
 }
 
 footer {
-    background-color: var(--secondary);
-    color: var(--primary);
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1.5rem 0;
+  background-color: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
 }
 
 footer a {
-    text-decoration: none;
-    color: var(--light-red);
+  text-decoration: none;
+  color: var(--light-red);
 }
 
 footer a:hover {
-    color: var(--dark-red);
+  color: var(--dark-red);
 }
 
 /* Media Queries  */
 
-@media(max-width: 760px) {
-    .logo-section .dali {
-        width: 60px;
-        height: 60px;
-    }
-    .logo-section .netflix {
-        height: 60px;
-    }
-    .titles .tv-title {
-        font-size: 4rem;
-    }
-    .titles .alias {
-        font-size: 2rem;
-    }
-    .titles .name {
-        font-size: 1.3rem;
-    }
-    main {
-        width: 90%;
-    }
-    .section-1, .section-2 {
-        grid-template-columns: 1fr;
-    }
-    .section-1 .image-quote, .section-2 .image-quote {
-        text-align: center;
-    }
-    .section-2 .image-quote {
-        order: 2;
-    }
+@media (max-width: 760px) {
+  .logo-section .dali {
+    width: 60px;
+    height: 60px;
+  }
+  .logo-section .netflix {
+    height: 60px;
+  }
+  .titles .tv-title {
+    font-size: 4rem;
+  }
+  .titles .alias {
+    font-size: 2rem;
+  }
+  .titles .name {
+    font-size: 1.3rem;
+  }
+  main {
+    width: 90%;
+  }
+  .section-1,
+  .section-2 {
+    grid-template-columns: 1fr;
+  }
+  .section-1 .image-quote,
+  .section-2 .image-quote {
+    text-align: center;
+  }
+  .section-2 .image-quote {
+    order: 2;
+  }
 }
 
-@media(max-width: 400px) {
-    .titles .tv-title {
-        font-size: 3rem;
-    }
-    .section-1 .image-quote .quote, .section-2 .image-quote .quote {
-        font-size: 1.5rem;
-    }
-    .logo-section {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
+@media (max-width: 400px) {
+  .titles .tv-title {
+    font-size: 3rem;
+  }
+  .section-1 .image-quote .quote,
+  .section-2 .image-quote .quote {
+    font-size: 1.5rem;
+  }
+  .logo-section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
