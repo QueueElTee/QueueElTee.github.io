@@ -273,6 +273,10 @@ footer .content .top .social-icons a:hover {
     color: var(--dark-violet);
 }
 
+footer .content .top .social-icons a span {
+    display: none;
+}
+
 footer .content hr {
     margin-top: 1.7rem;
 }
