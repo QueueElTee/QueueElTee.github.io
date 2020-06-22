@@ -1,0 +1,502 @@
+:root {
+    --violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --light-gray: hsl(0, 0%, 98%);
+    --heading-font: 'DM Serif Display', serif;
+    --body-font: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    color: var(--dark-grayish-violet);
+    text-transform: uppercase;
+    transition: all ease-in 0.5s;
+}
+
+.nav-content ul li a:hover {
+    color: var(--dark-violet);
+}
+
+.nav-content ul li a.button {
+    color: var(--dark-violet);
+    border: 2px solid var(--dark-violet);
+    padding: 0.5rem 1rem;
+}
+
+.nav-content ul li a.button:hover {
+    background-color: var(--dark-violet);
+    color: var(--light-gray);
+}
+
+.burger {
+    display: none;
+}
+
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
+.humanizing {
+    background-color: var(--violet);
+    height: auto;
+}
+
+.humanizing .content {
+    width: 85%;
+    margin: auto;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    justify-content: start;
+}
+
+.humanizing .content .image img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -180px;
+}
+
+.humanizing .content .text {
+    color: white;
+    position: relative;
+}
+
+.humanizing .content .text hr {
+    width: 35%;
+}
+
+.humanizing .content .text h2 {
+    padding-top: 4rem;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.humanizing .content .text .coverage {
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+
+.humanizing .content .text .button {
+    margin-top: 2.5rem;
+}
+
+.humanizing .content .text a {
+    margin-top: 1rem;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease-in 0.5s;
+}
+
+.humanizing .content .text a:hover {
+    background-color: white;
+    color: var(--violet);
+}
+
+.humanizing::before {
+    content: '';
+    background-image: url('/images/bg-pattern-intro-left-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.humanizing::after {
+    content: "";
+    background-image: url("images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.different {
+    width: 85%;
+    margin: auto;
+}
+
+.different .title {
+    margin-top: 220px;
+}
+
+.different .title hr {
+    width: 17.5%;
+}
+
+.different .title h2 {
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+
+.different .details {
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.different .details div {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.different .details div h4 {
+    font-size: 2rem;
+}
+
+.different .details div p {
+    line-height: 1.5;
+    color: var(--dark-grayish-violet);
+}
+
+.find-out {
+    width: 85%;
+    margin: auto;
+    background-color: var(--violet);
+    margin-top: 10rem;
+    color: white;
+    padding: 3rem 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+}
+
+.find-out h3 {
+    font-size: 3rem;
+    width: 50%;
+}
+
+.find-out a {
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease-in 0.5s;
+}
+
+.find-out a:hover {
+    background-color: white;
+    color: var(--violet);
+}
+
+footer {
+    background-color: rgb(250, 250, 250);
+    margin-top: 10rem;
+    background-image: url("images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 4rem 0;
+}
+
+footer .content {
+    width: 85%;
+    margin: auto;
+}
+
+footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .content .top .social-icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .top .social-icons a {
+    color: rgb(117, 114, 121);
+    font-size: 1.5rem;
+    transition: all ease-in 0.5s;
+}
+
+footer .content .top .social-icons a:hover {
+    color: var(--dark-violet);
+}
+
+footer .content hr {
+    margin-top: 1.7rem;
+}
+
+footer .content .bottom {
+    margin-top: 2.2rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--grayish-blue);
+}
+
+footer .content .bottom ul {
+    margin-top: 1.8rem;
+}
+
+footer .content .bottom ul li {
+    list-style: none;
+    margin: 0.8rem 0;
+}
+
+footer .content .bottom ul li a {
+    text-decoration: none;
+    color: var(--dark-violet);
+}
+
+footer .content .bottom ul li a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1024px) {
+    .nav-content ul {
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-content ul {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        flex-direction: column;
+        height: 90vh;
+        width: 50%;
+        background-color: var(--dark-violet);
+        text-align: center;
+        justify-content: space-between;
+        padding-top: 3rem;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 3;
+    }
+    .nav-content ul::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 35%;
+        background: url("images/bg-pattern-mobile-nav.svg") no-repeat;
+        background-position: bottom;
+        background-size: 100% 100%;
+        margin-top: 3rem;
+        position: relative;
+        bottom: 0;
+    }
+    .nav-content ul li a {
+        color: white;
+    }
+    .nav-content ul li a:hover {
+        color: white;
+    }
+    .nav-content ul li a.button {
+        border: 2px solid white;
+        color: white;
+        padding: 0.8rem 30%;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .humanizing .content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-top: 0;
+        grid-gap: 0rem;
+    }
+    .humanizing .content .text {
+        order: 2;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .humanizing .content hr {
+        display: none;
+    }
+    .humanizing .content .image img {
+        margin-bottom: 0px;
+    }
+    .humanizing::before {
+        background: none;
+    }
+    .humanizing::after {
+        background: none;
+    }
+    .humanizing .content .text::after {
+        content: "";
+        background-image: url('/images/bg-pattern-intro-right-mobile.svg');
+        background-position: bottom right;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: 60%;
+    }
+    .humanizing .content .text::before {
+        content: "";
+        background-image: url('/images/bg-pattern-intro-left-mobile.svg');
+        background-position: top left;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .humanizing .content .text h2 {
+        padding-top: 4rem;
+        font-size: 3rem;
+    }
+    .humanizing .content .text h2, .humanizing .content .text p {
+        width: 85%;
+        margin: auto;
+    }
+    .humanizing .content .text .button {
+        padding-bottom: 2rem;
+    }
+    .different .title hr {
+        margin: auto;
+        width: 35%;
+    }
+    .different .title h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .different .details {
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+    .different .details img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .different .details h4, .different .details p {
+        text-align: center;
+    }
+    .different .details div h4 {
+        font-size: 1.8rem;
+    }
+    .find-out {
+        flex-direction: column;
+        background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+        padding: 3rem 2.5rem;
+    }
+    .find-out h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .find-out a {
+        margin-top: 1.5rem;
+    }
+    footer {
+        background-image: url("images/bg-pattern-footer-mobile.svg");
+    }
+    footer .content .top .social-icons {
+        width: 50%;
+    }
+    footer .content .bottom {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .nav-content ul {
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px) {
+    .humanizing .content .text h2, .different .title h2 {
+        font-size: 2.6rem;
+    }
+    .different .details div h4 {
+        font-size: 1.7rem;
+    }
+    .find-out {
+        padding: 3rem 1rem;
+    }
+    .find-out h3 {
+        font-size: 2rem;
+    }
+    footer .content .top {
+        flex-direction: column;
+    }
+    footer .content .top .social-icons {
+        width: 60%;
+        margin-top: 1.5rem;
+    }
+    footer .content .bottom {
+        grid-template-columns: 1fr;
+    }
+    footer .content .bottom p {
+        margin-top: 2rem;
+    }
+    footer .content .bottom ul {
+        margin-top: 1.5rem;
+    }
+}
