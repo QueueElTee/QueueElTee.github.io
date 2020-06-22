@@ -315,7 +315,7 @@ footer .content .bottom ul li a:hover {
         overflow-x: hidden;
     }
     .nav-content ul {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 10vh;
         flex-direction: column;
@@ -467,6 +467,7 @@ footer .content .bottom ul li a:hover {
 @media(max-width: 550px) {
     .nav-content ul {
         width: 100%;
+        position: fixed;
     }
 }
 
