@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root {
+    --linear-gradient: linear-gradient( to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+    --default-font: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--default-font);
+}
+
+body {
+    background-color: var(--very-light-grayish-blue);
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+body::before, body::after {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+body::before {
+    background-image: url("images/bg-bottom.svg");
+    background-position: bottom left;
+    bottom: 0;
+    left: 0;
+}
+
+body::after {
+    background-image: url("images/bg-top.svg");
+    background-position: top right;
+    top: 0;
+    right: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 3.5rem 0;
+    z-index: 2;
+}
+
+.container h1 {
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+.container p {
+    color: var(--light-grayish-blue);
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.toggle-container>* {
+    margin-left: 1rem;
+}
+
+/* Start of toggle button styles */
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background: var(--linear-gradient);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:hover {
+    background: var(--light-grayish-blue);
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* End of toggle button styles */
+
+.cards {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    padding: 1.8rem 1.8rem;
+    border-radius: 0.5rem;
+}
+
+.card .monthly {
+    display: none;
+}
+
+.card p {
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+}
+
+.card .price {
+    margin-top: 1.5rem;
+    font-size: 4rem;
+}
+
+.card .price span {
+    font-size: 2.5rem;
+    margin-right: 0.3rem;
+}
+
+.card ul {
+    margin-top: 1.5rem;
+}
+
+.card ul li {
+    list-style: none;
+}
+
+.card ul li {
+    border-top: 1px solid var(--dark-grayish-blue);
+    padding: 20px;
+}
+
+.card ul li:last-child {
+    border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.card.professional ul li {
+    border-top: 1px solid var(--very-light-grayish-blue);
+    padding: 20px;
+}
+
+.card.professional ul li:last-child {
+    border-bottom: 1px solid var(--very-light-grayish-blue);
+}
+
+.card.basic, .card.master {
+    background-color: white;
+    color: var(--dark-grayish-blue);
+}
+
+.card.professional p {
+    color: var(--very-light-grayish-blue);
+}
+
+.card.professional {
+    color: var(--very-light-grayish-blue);
+    background: var(--linear-gradient);
+    padding: 4rem 30px;
+}
+
+.card a {
+    text-decoration: none;
+    display: block;
+    margin-top: 2rem;
+    /* border: 1px solid gray; */
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.card.basic a, .card.master a {
+    background: var(--linear-gradient);
+    color: white;
+}
+
+.card.basic a:hover, .card.master a:hover {
+    background: none;
+    border: 1px solid var(--dark-grayish-blue);
+    color: var(--grayish-blue);
+}
+
+.card.professional a {
+    background: white;
+    color: hsl(237, 63%, 64%);
+}
+
+.card.professional a:hover {
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Media Queries */
+
+@media(max-width: 950px) {
+    body::after {
+        left: 8rem;
+    }
+    body::before {
+        background: none;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card.professional {
+        padding: 1.8rem 1.8rem;
+    }
+    .cards>* {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media(max-width: 375px) {
+    body::after {
+        left: 15rem;
+    }
+    .card .price {
+        font-size: 3.5rem;
+    }
+    .card .price span {
+        font-size: 2rem;
+    }
+}
