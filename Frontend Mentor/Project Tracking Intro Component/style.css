@@ -211,10 +211,9 @@ main .text .demo p {
     main .text h1, main .text .single, main .text .demo {
         margin-top: 2rem;
     }
-    main img {
-        transform: translateX(0%);
+   main img {
+        transform: translateX(15%) scaleX(1.5);
         padding-left: 2rem;
-        padding-right: 2rem;
     }
 }
 
