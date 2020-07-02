@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --bg-introEmail: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonial: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --gradient: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  --secondary-font: "Raleway", sans-serif;
+  --primary-font: "Open Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cyan);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: var(--secondary-font);
+}
+
+p {
+  font-family: var(--primary-font);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a {
+  font-size: 14px;
+}
+
+header {
+  background: var(--bg-introEmail);
+
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-position: bottom;
+  bottom: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 100%;
+  background-size: 100% 31%;
+  padding-bottom: 12rem;
+}
+
+nav {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+header .illustration {
+  width: 55%;
+  margin: auto;
+}
+
+header .illustration img {
+  width: 100%;
+}
+header .container {
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  width: 70%;
+}
+
+header .container .text {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+header .container .text h1 {
+  font-size: 2.5rem;
+}
+
+header .container .text p {
+  width: 85%;
+  margin: auto;
+  font-size: 16px;
+  margin-top: 1.5rem;
+}
+
+header .container .text a {
+  background: var(--gradient);
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+main {
+  background-color: var(--bg-main);
+}
+
+.features .container {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 5rem;
+  align-items: center;
+}
+
+.features .container > * {
+  text-align: center;
+}
+
+.features .container h3 {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.features .container p {
+  margin-top: 0.7rem;
+}
+
+.productive {
+  margin-top: 6rem;
+}
+
+.productive .container {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 3rem;
+}
+
+.productive .container .illustration {
+  width: 100%;
+}
+
+.productive .container .text h2 {
+  font-size: 2rem;
+}
+
+.productive .container .text p {
+  margin-top: 1rem;
+}
+
+.productive .container .text .link {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--cyan);
+  width: fit-content;
+  margin-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.productive .container .text .link img {
+  margin-left: 5px;
+}
+
+.testimonial {
+  margin-top: 6rem;
+}
+
+.testimonial .container {
+  margin: auto;
+  width: 90%;
+}
+
+.testimonial .container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+  z-index: 2;
+}
+
+.testimonial .container .cards > * {
+  background-color: var(--bg-testimonial);
+  border-radius: 5px;
+  padding: 2rem 1.5rem;
+  box-shadow: 12px 7px 0 var(--bg-introEmail);
+}
+
+.testimonial .container .cards .author {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .container .cards .author img {
+  margin-right: 0.7rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.testimonial .container .cards .author .by-line p {
+  line-height: 1.2;
+}
+
+.testimonial .container .cards .author .by-line .title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.testimonial .container .cards .author .by-line .company {
+  font-size: 11px;
+}
+
+.testimonial .container .quotes {
+  position: relative;
+  top: 0.8rem;
+  z-index: 1;
+}
+
+.early-access {
+  background-color: var(--bg-introEmail);
+  margin: auto;
+  width: 80%;
+  margin-top: 4rem;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+  text-align: center;
+  display: grid;
+  grid-gap: 1rem;
+  z-index: 2;
+  transform: translateY(50%);
+}
+
+.early-access h2 {
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form > * {
+  border-radius: 50px;
+  outline: none;
+  padding: 1rem 0rem;
+  border: none;
+}
+
+form button {
+  background: var(--gradient);
+  cursor: pointer;
+  width: 30%;
+}
+
+form input {
+  width: 60%;
+  padding-left: 2rem;
+  color: black;
+}
+
+footer {
+  background-color: var(--bg-footer);
+  padding-top: 10rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer .content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between; */
+}
+
+footer .content .location {
+  width: 25%;
+}
+
+footer .content .location > * {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .content .contact > * {
+  display: flex;
+  align-items: center;
+}
+
+footer .content .location div p,
+footer .content .contact div p {
+  margin-left: 1.5rem;
+}
+
+footer .content .contact .email {
+  margin-top: 0.8rem;
+}
+
+footer .content ul li {
+  list-style: none;
+}
+
+footer .content ul li:not(.first) {
+  margin-top: 0.8rem;
+}
+
+footer .content .social a {
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  margin-right: 20px;
+}
+
+footer .content .social a i {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+footer .content .social a span {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  footer .content {
+    flex-direction: column;
+  }
+  footer .content .social,
+  footer .content ul {
+    margin-top: 3rem;
+  }
+  footer .content .location {
+    width: 100%;
+  }
+  footer .content .social {
+    text-align: center;
+  }
+  footer .content .contact .phone {
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+  nav img {
+    width: 110px;
+    height: 35px;
+  }
+  nav ul {
+    width: 60%;
+  }
+  header {
+    padding-bottom: 2rem;
+  }
+  header .illustration {
+    width: 80%;
+  }
+  header .container {
+    width: 90%;
+  }
+  header .container .text p {
+    width: 90%;
+  }
+  header .container .text h1 {
+    font-size: 2rem;
+  }
+  .features .container {
+    padding-top: 6rem;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .productive .container {
+    grid-template-columns: 1fr;
+  }
+  .productive .container .illustration {
+    width: 90%;
+    margin: auto;
+  }
+  .productive .container .text h2 {
+    font-size: 1.7rem;
+  }
+  .testimonial .container {
+    width: 75%;
+  }
+  .testimonial .container .cards {
+    grid-template-columns: 1fr;
+  }
+  .testimonial .container .cards p {
+    font-size: 12px;
+  }
+  .testimonial .container .cards .author .by-line .title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .testimonial .container .cards .author .by-line .company {
+    font-size: 10px;
+  }
+  .testimonial .container .quotes {
+    width: 40px;
+  }
+
+  .early-access {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .early-access h2 {
+    font-size: 1.7rem;
+  }
+  form {
+    flex-direction: column;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  form input,
+  form button {
+    width: 100%;
+  }
+  form button {
+    margin-top: 1rem;
+  }
+  footer {
+    padding-top: 13rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  nav ul {
+    width: 55%;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+  header .container .text h1 {
+    font-size: 1.7rem;
+  }
+  header .container .text p {
+    font-size: 14px;
+  }
+  .productive .container .text h2,
+  .early-access h2 {
+    font-size: 1.3rem;
+  }
+  .early-access {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.1rem;
+  }
+  footer {
+    padding-top: 15rem;
+  }
+}
