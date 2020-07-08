@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --pale-blue: hsl(207, 100%, 98%);
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  padding: 0.45rem 1.4rem;
+  border-radius: 50px;
+  transition: all ease 1s;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 13rem;
+}
+
+header h1 {
+  color: var(--dark-cyan);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header p {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: var(--dark-cyan);
+}
+
+header a, .ready a {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--pink);
+  color: white;
+  padding: 1.5rem 6rem;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all ease 1s;
+}
+
+header a:hover, .ready a:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mockup {
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 80%;
+}
+
+.statistics {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics div .numbers {
+  font-size: 6rem;
+  color: var(--dark-cyan);
+  font-weight: bold;
+  text-align: justify;
+}
+
+.statistics div p {
+  font-size: 20px;
+  color: darkslategray;
+  /* margin-top: 1rem; */
+  text-align: center;
+}
+
+.mockup img {
+  width: 100%;
+}
+
+.benefits {
+  margin-top: 18rem;
+  color: var(--dark-cyan);
+}
+
+.benefits section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 6rem;
+  grid-gap: 6rem;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+}
+
+.benefits p {
+  margin-top: 1.5rem;
+}
+
+.benefits section .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.benefits section.grow {
+  background-color: var(--pale-blue);
+  /* padding: 0 6rem; */
+  /* position: relative; */
+  position: relative;
+}
+
+.benefits section.grow::before {
+  background: url('images/bg-section-top-desktop-1.svg');
+  background-size: cover;
+  height: 150px;
+  content: "";
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  top: -9.3rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.benefits section.grow::after {
+  background: url('images/bg-section-bottom-desktop-1.svg');
+  background-size: cover;
+  height: 150px;
+  content: "";
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: -9.3rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.benefits section.conversations {
+  margin-top: 15rem;
+}
+
+.benefits section.conversations .text {
+  order: 2;
+}
+
+.benefits section.users {
+  margin-top: 15rem;
+  background-color: var(--pale-blue);
+  position: relative;
+}
+
+.benefits section.users::before {
+  background: url('images/bg-section-top-desktop-2.svg');
+  background-size: cover;
+  height: 150px;
+  content: "";
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  top: -9.3rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.benefits section.users::after {
+  background: url('images/bg-section-bottom-desktop-2.svg');
+  background-size: cover;
+  height: 150px;
+  content: "";
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: -9.3rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.ready {
+  margin-top: 8rem;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.ready h2 {
+  color: var(--dark-cyan);
+  font-size: 2.4rem;
+}
+
+footer {
+  background-color: var(--dark-cyan);
+  color: white;
+  position: relative;
+  margin-top: 10rem;
+  padding: 6rem;
+}
+
+footer::before {
+  background: url('images/bg-footer-top-desktop.svg');
+  background-size: cover;
+  height: 150px;
+  content: "";
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  top: -9.3rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+footer .main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem;
+}
+
+footer .main-content .logo .logo-bottom {
+  padding-bottom: 1rem;
+}
+
+footer .main-content .newsletter h3 {
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  padding-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+footer .main-content .logo .lorem, footer .main-content .newsletter p {
+  font-size: 14px;
+  width: 70%;
+}
+
+footer .main-content .logo .contact>* {
+  display: flex;
+  align-items: center;
+}
+
+footer .main-content .logo .contact div p {
+  margin-left: 1rem;
+}
+
+footer .main-content .logo .contact .email {
+  margin-top: 1rem;
+}
+
+footer .main-content .logo .contact, footer .main-content .newsletter form {
+  margin-top: 2rem;
+}
+
+footer .main-content .newsletter form {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .main-content .newsletter form>* {
+  border: none;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+footer .main-content .newsletter form input {
+  width: 60%;
+  padding-left: 0.8rem;
+}
+
+footer .main-content .newsletter form button {
+  width: 30%;
+  background-color: var(--pink);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all ease 1s;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer .main-content .newsletter form button:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+footer .social-icons {
+  margin-top: 4rem;
+}
+
+footer .social-icons a {
+  color: white;
+  font-size: 2.5rem;
+}
+
+footer .social-icons a {
+  margin-right: 1.3rem;
+}
+
+footer .social-icons span {
+  display: none;
+}
+
+@media (max-width: 965px) {
+  .statistics div .numbers {
+    font-size: 4rem;
+  }
+  header p, footer .main-content .logo .lorem, footer .main-content .newsletter p {
+    width: 100%;
+  }
+  footer .main-content {
+    grid-gap: 6rem;
+  }
+  footer .main-content .newsletter form {
+    flex-direction: column;
+  }
+  footer .main-content .newsletter form input {
+    width: 100%;
+  }
+  footer .main-content .newsletter form button {
+    width: 40%;
+    align-self: flex-end;
+    margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 8rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .statistics {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .statistics .messages {
+    margin-top: 5rem;
+  }
+  .benefits section {
+    grid-template-columns: 1fr;
+    padding: 3rem 3rem;
+    grid-gap: 6rem;
+  }
+  .benefits section .text {
+    text-align: center;
+  }
+  .benefits section .image {
+    width: 90%;
+    margin: auto;
+  }
+  .benefits h2 {
+    font-size: 2rem;
+  }
+  .benefits p {
+    margin-top: 0.8rem;
+  }
+  .benefits section.grow .text, .benefits section.users .text {
+    order: 2;
+  }
+  .ready h2 {
+    font-size: 2.1rem;
+  }
+  footer {
+    padding: 6rem 3rem;
+  }
+  footer .main-content {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+  footer .main-content .logo {
+    order: 2;
+  }
+  footer .main-content .logo .logo-bottom {
+    width: 190px;
+  }
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 14px;
+  }
+  nav {
+    margin-top: 2rem;
+  }
+  nav img {
+    width: 140px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  header {
+    margin-top: 6rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header a, .ready a {
+    font-size: 14px;
+    padding: 0.8rem 3rem;
+  }
+  .statistics div img {
+    width: 40px;
+  }
+  .statistics div .numbers {
+    font-size: 3.5rem;
+  }
+  .statistics div p {
+    font-size: 14px;
+  }
+  .benefits h2 {
+    font-size: 1.35rem;
+  }
+  .benefits section {
+    padding: 3rem 1.6rem;
+  }
+  .benefits section.grow::before {
+    background: url('images/bg-section-top-mobile-1.svg');
+    background-size: cover;
+    height: 150px;
+    content: "";
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: -9.3rem;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .benefits section.grow::after {
+    background: url('images/bg-section-bottom-mobile-1.svg');
+    background-size: cover;
+    height: 150px;
+    content: "";
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: -9.3rem;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  .benefits section.users::before {
+    background: url('images/bg-section-top-mobile-2.svg');
+    background-size: cover;
+    height: 150px;
+    content: "";
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: -9.3rem;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .benefits section.users::after {
+    background: url('images/bg-section-bottom-mobile-2.svg');
+    background-size: cover;
+    height: 150px;
+    content: "";
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: -9.3rem;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  .benefits section.conversations {
+    margin-top: 10rem;
+  }
+  .ready {
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+  }
+  .ready h2 {
+    font-size: 1.5rem;
+  }
+  footer::before {
+    background: url('images/bg-footer-top-mobile.svg');
+    background-size: cover;
+    height: 150px;
+    content: "";
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: -9.3rem;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  footer {
+    padding: 4rem 1.6rem;
+  }
+  footer .main-content .newsletter h3 {
+    font-size: 1.2rem;
+  }
+  footer .social-icons a {
+    font-size: 1.8rem;
+  }
+}
