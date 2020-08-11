@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --light-blue: #00B0FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #536DFE;
+}
+
+header img {
+    height: 15vh;
+    width: 100%;
+}
+
+/* main {
+    padding: 1rem;
+} */
+
+main h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+main form {
+    padding: 0 1rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+main form>* {
+    padding: 0.5rem 0rem;
+}
+
+main form input {
+    padding-left: 0.5rem;
+    width: 70%;
+}
+
+main form button {
+    border-radius: 50%;
+    padding: 1rem;
+    border: none;
+    background-color: #00B0FF;
+    cursor: pointer;
+    outline: none;
+    margin-left: 1rem;
+}
+
+main form button i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+main ul {
+    background-color: #F9F9F9;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+main ul li {
+    list-style: none;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    width: calc(100% - 2rem);
+    margin: auto;
+    position: relative;
+    padding-left: 1.8rem;
+    cursor: pointer;
+}
+
+main ul li:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.close:hover {
+    color: red;
+}
+
+ul li.checked {
+    background: #536DFE;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+@media(max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 425px) {
+    main form button {
+        padding: 0.5rem;
+    }
+}
