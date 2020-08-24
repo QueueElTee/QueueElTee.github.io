@@ -408,6 +408,10 @@ h3 {
   transition: color 0.3s ease-in-out;
 }
 
+.footer .social-icons a span {
+  display: none;
+}
+
 .footer .social-icons a:not(:last-child) {
   margin-right: 0.625rem;
 }
