@@ -76,7 +76,7 @@ nav a {
   font-weight: 500;
 }
 
-header .hamburger>* {
+header .hamburger > * {
   display: block;
   width: 26px;
   height: 4px;
@@ -450,7 +450,7 @@ form .control {
   align-items: start;
 }
 
-form .control>* {
+form .control > * {
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   border-radius: 30px;
@@ -493,7 +493,8 @@ form .error {
   header .hamburger {
     display: block;
   }
-  header .links, header .button {
+  header .links,
+  header .button {
     display: none;
   }
   .hero {
@@ -521,7 +522,8 @@ form .error {
   .hero p {
     width: 100%;
   }
-  .hero a, .hero p {
+  .hero a,
+  .hero p {
     margin-top: 1.875rem;
   }
   .hero .image {
