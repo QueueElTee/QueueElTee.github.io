@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/pexels-frans-van-heerden-632522.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    color: #DBDBE3;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    line-height: 1.3;
+}
+
+body::after {
+    background-color: #2C3771;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+a {
+    text-decoration: none;
+    color: #DBDBE3;
+    transition: all ease-in-out 0.3s;
+    font-weight: bold;
+}
+
+nav {
+    padding-top: 3.4375rem;
+    padding-left: 4.6875rem;
+    padding-right: 4.6875rem;
+    text-align: right;
+}
+
+nav a:not(:last-child) {
+    margin-right: 2.1875rem;
+}
+
+.btn {
+    background-color: #D99712;
+    padding: 0.9365rem 1.875rem;
+    border-radius: 50px;
+}
+
+a:hover {
+    color: #3357AE;
+}
+
+main {
+    padding: 0 6.875rem;
+    margin-top: 11.25rem;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+}
+
+p {
+    width: 65%;
+    margin-top: 1rem;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 1.7rem;
+}
+
+main a i {
+    margin-left: 0.2rem;
+}
+
+@media(max-width: 1024px) {
+    main {
+        padding: 0 4.6875rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+    p {
+        width: 85%;
+    }
+    main, nav {
+        padding-left: 2.34375rem;
+        padding-right: 2.34375rem;
+    }
+}
+
+@media(max-width: 650px) {
+    nav a:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    nav a {
+        font-size: 0.875rem;
+    }
+    nav a.btn {
+        padding: 0.7rem 1.5rem;
+    }
+}
+
+@media(max-width: 425px) {
+    body {
+        background-image: url("img/pexels-vincent-rivaud-2265876.jpg");
+    }
+    p, a {
+        font-size: 0.875rem;
+    }
+    /* main {
+        margin-top: 11rem;
+    } */
+    nav {
+        padding-top: 2.5rem;
+    }
+    main, nav {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    p {
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px) {
+    nav a:not(:last-child) {
+        margin-right: 0.7rem;
+    }
+    nav a.btn {
+        padding: 0.7rem 1.1rem;
+    }
+}
