@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.title {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2rem;
+    background-color: rgb(4, 4, 88);
+    color: white;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.counter h1 {
+    font-size: 4.5rem;
+    color: darkgray;
+}
+
+h1.greater {
+    color: green;
+}
+
+h1.reset {
+    color: darkgray;
+}
+
+h1.less {
+    color: red;
+}
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons>* {
+    padding: 0.8rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons button:nth-child(1) {
+    background-color: green;
+}
+
+.buttons button:nth-child(2) {
+    background-color: yellow;
+}
+
+.buttons button:nth-child(3) {
+    background-color: red;
+}
+
+.buttons button:nth-child(1) i, .buttons button:nth-child(3) {
+    color: white;
+}
