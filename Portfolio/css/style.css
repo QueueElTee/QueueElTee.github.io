@@ -16,7 +16,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16E0BD;
+    --clr-accent: #00aeff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -141,7 +141,9 @@ header{
 }
 
 .logo{
-    max-width: 100px;
+    max-width: 250px;
+    max-height: 100px;
+    cursor: pointer;
 }
 
 .nav{
@@ -455,17 +457,4 @@ header{
 
 .social-list__link{
     padding: .5em;
-}
-
-/* Individual portfolio item styles */
-.portfolio-item-individual{
-    padding: 0 2em 2em;
-    min-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p{
-    min-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
