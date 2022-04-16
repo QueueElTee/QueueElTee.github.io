@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 :root {
+
+  --ff-primary: 'Barlow', sans-serif;
+  --ff-secondary: 'Fraunces', monospace;
+
+  font-size: 16px;
+
+  --fw-reg: 600;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
@@ -12,17 +22,90 @@
   --white: hsl(0, 0%, 100%);
 }
 
-* {
+html{
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Fraunces', serif;
-  font-size: 18px;
+  font-family: var(--ff-primary);
+  font-size: 1rem;
 }
+
+h1,h2,h3,h4{
+  font-family: var(--ff-secondary);
+}
+
+header{
+  background-image: url(images/desktop/image-header.jpg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  padding: 2rem 1.5rem;
+  background-size: 100% 100%;
+  padding-bottom: 26rem;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .links{
+  list-style: none;
+  display: flex;
+}
+
+header nav .links>*:not(:last-child){
+  margin-right: 2rem;
+}
+
+header nav .links a{
+  text-decoration: none;
+  
+  color: var(--white);
+}
+
+header nav .links .button{
+  background-color: var(--white);
+  color: var(--dark-desaturated-blue);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+header nav .links .button:hover{
+  background-color: rgba(255,255,255, 0.4);
+  color: var(--white);
+}
+
+header h1{
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 6rem;
+  color: var(--white);
+  letter-spacing: 0.2em;
+}
+
+/* header .down-arrow{
+  text-align: center;
+}
+
+head .down-arrow i{
+  height: 5rem;
+} */
 
 /* Mobile: 375px
 Desktop: 1440px */
