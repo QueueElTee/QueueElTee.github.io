@@ -41,6 +41,7 @@ body {
 
 h1,h2,h3,h4{
   font-family: var(--ff-secondary);
+  font-weight: var(--fw-bolder);
 }
 
 header{
@@ -50,7 +51,7 @@ header{
   /* width: 100%; */
   padding: 2rem 1.5rem;
   background-size: 100% 100%;
-  padding-bottom: 26rem;
+  padding-bottom: 15rem;
 }
 
 header nav{
@@ -71,8 +72,13 @@ header nav .links>*:not(:last-child){
 
 header nav .links a{
   text-decoration: none;
-  
   color: var(--white);
+}
+
+header nav .hamburger-icon{
+  color: var(--white);
+  display: none;
+  cursor: pointer;
 }
 
 header nav .links .button{
@@ -99,6 +105,65 @@ header h1{
   letter-spacing: 0.2em;
 }
 
+header .arrow-down-icon{
+  text-align: center;
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px){
+  header nav .hamburger-icon{
+    display: block;
+  }
+
+  header .nav .links{
+    /* flex-direction: column; */
+    display: none;
+  }
+
+  header .nav.responsive .links{
+    display: block;
+    background-color: var(--white);
+    position: fixed;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 15rem;
+    text-align: center;
+    line-height: 1;
+    padding: 2rem 0;
+  }
+
+  header .nav.responsive .links a {
+    color: var(--dark-greyish-blue);
+  }
+
+  header .nav.responsive .links .button{
+    background-color: var(--yellow);
+  }
+
+  header nav .links>*:not(:last-child){
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 425px){  
+  header{
+    background-image: url(images/mobile/image-header.jpg);
+    padding-bottom: 12rem;
+  }
+
+  header h1{
+    font-size: 2.8rem;
+  }
+
+  header .arrow-down-icon{
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 375px){
+  header h1{
+    font-size: 2.2rem;
+  }
+}
+
 /* header .down-arrow{
   text-align: center;
 }
@@ -110,9 +175,3 @@ head .down-arrow i{
 /* Mobile: 375px
 Desktop: 1440px */
 
-@media (max-width: 768px){
-
-}
-@media (max-width: 425px){
-
-}

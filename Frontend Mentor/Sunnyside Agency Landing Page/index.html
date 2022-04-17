@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <script src="https://kit.fontawesome.com/f6fb301c7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav" id="nav">
       <a href="#" class="logo">
         <img src="images/logo.svg" alt="logo">
       </a>
@@ -21,11 +22,16 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#" class="button">Contact</a></li>
       </ul>
+      <a href="javascript:void(0);" class="hamburger-icon" onclick="navFunction()">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
     </nav>
     <div class="hero-text">
       <h1>We are creatives</h1>
     </div>
-    <!-- <p class="down-arrow"><i class="fas fa-arrow-down fa-xl"></i></p> -->
+    <div class="arrow-down-icon">
+      <img src="images/icon-arrow-down.svg" alt="arrow-down">
+    </div>
   </header>
 
   <section class="transform">
@@ -113,7 +119,6 @@
      </div>
   </footer>
 
-  <script src="https://kit.fontawesome.com/f6fb301c7e.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
