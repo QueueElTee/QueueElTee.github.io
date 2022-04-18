@@ -44,6 +44,7 @@ h1,h2,h3,h4{
   font-weight: var(--fw-bolder);
 }
 
+/* Header Styles */
 header{
   background-image: url(images/desktop/image-header.jpg);
   /* background-size: cover; */
@@ -110,6 +111,73 @@ header .arrow-down-icon{
   margin-top: 6rem;
 }
 
+
+/* section styles */
+section h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--dark-desaturated-blue);
+}
+
+.transform, .stand-out{
+  display: flex;
+  align-items: center;
+}
+
+.stand-out{
+  flex-direction: row-reverse;
+}
+
+.transform .text, .stand-out .text{
+  background-color: var(--white);
+  padding: 0 5vw;
+  width: 50vw;
+}
+
+.transform .text p, .stand-out .text p,
+.transform .text a, .stand-out .text a{
+  margin-top: 1.5rem;
+}
+
+.transform .text p, .stand-out .text p{
+  color: var(--greyish-blue);
+  line-height: 1.65;
+}
+
+.transform .text a, .stand-out .text a{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-family: var(--ff-secondary);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.transform .text a{
+  border-bottom: 4px solid var(--yellow);
+}
+
+.stand-out .text a{
+  border-bottom: 4px solid var(--soft-red);
+}
+
+.transform .text a:hover{
+  border-bottom: 4px solid rgba(250, 212, 0, 0.5);
+}
+
+.stand-out .text a:hover{
+  border-bottom: 4px solid rgba(254, 120, 103, 0.5);
+}
+
+.transform .image img, .stand-out .image img{
+  width: 50vw;
+}
+
+/* .stand-out .image{
+  height: 300px;
+} */
+
 @media (max-width: 768px){
   header nav .hamburger-icon{
     display: block;
@@ -142,6 +210,10 @@ header .arrow-down-icon{
 
   header nav .links>*:not(:last-child){
     margin-bottom: 1.5rem;
+  }
+
+  section h2{
+    font-size: 2rem;
   }
 }
 @media (max-width: 425px){  
