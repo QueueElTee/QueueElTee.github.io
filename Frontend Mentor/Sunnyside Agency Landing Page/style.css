@@ -174,9 +174,46 @@ section h2{
   width: 50vw;
 }
 
-/* .stand-out .image{
-  height: 300px;
-} */
+.more-features{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.more-features h3{
+  font-size: 1.35rem;
+}
+
+.more-features .graphics, .more-features .photography{
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   background-size: 100% 100%;
+   padding-top: 22rem;
+   padding-bottom: 3.5rem;
+}
+
+.more-features .content{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.more-features .content p{
+  margin-top: 1.1rem;
+  line-height: 1.5;
+}
+
+.more-features .graphics{
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  color: var(--dark-moderate-cyan);
+}
+
+.more-features .photography{
+  background-image: url(images/desktop/image-photography.jpg);
+  color: var(--dark-blue);
+}
+
 
 @media (max-width: 768px){
   header nav .hamburger-icon{
@@ -184,7 +221,6 @@ section h2{
   }
 
   header .nav .links{
-    /* flex-direction: column; */
     display: none;
   }
 
@@ -215,6 +251,28 @@ section h2{
   section h2{
     font-size: 2rem;
   }
+
+  .stand-out, .transform{
+    flex-direction: column-reverse;
+  }
+
+  .transform .text, .stand-out .text{
+    text-align: center;
+    padding: 4rem 0;
+    width: 80vw;
+  }
+
+  .transform .image img, .stand-out .image img{
+    width: 90vw;
+  }
+
+  .more-features{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .more-features .content{
+    width: 70%;
+  }
 }
 @media (max-width: 425px){  
   header{
@@ -228,6 +286,18 @@ section h2{
 
   header .arrow-down-icon{
     margin-top: 4rem;
+  }
+  .transform .text, .stand-out .text{
+    width: 90vw;
+  }
+  .transform .image img, .stand-out .image img{
+    width: 100vw;
+  }
+  .more-features h3{
+    font-size: 1.7rem;
+  }
+  .more-features .content{
+    width: 90%;
   }
 }
 @media (max-width: 375px){
