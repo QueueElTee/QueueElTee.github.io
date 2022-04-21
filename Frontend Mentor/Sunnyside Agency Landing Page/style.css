@@ -44,6 +44,10 @@ h1,h2,h3,h4{
   font-weight: var(--fw-bolder);
 }
 
+p{
+  line-height: 1.5;
+}
+
 /* Header Styles */
 header{
   background-image: url(images/desktop/image-header.jpg);
@@ -175,7 +179,6 @@ section h2{
 }
 
 .more-features{
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -214,6 +217,68 @@ section h2{
   color: var(--dark-blue);
 }
 
+.testimonials{
+  margin-top: 6rem;
+}
+
+.testimonials .title-header{
+  text-transform: uppercase;
+  letter-spacing: normal;
+  color: var(--very-dark-greyish-blue);
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.testimonials .client-testimonials{
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+  grid-gap: 0.7rem;
+}
+
+.testimonials .client-testimonials *{
+  text-align: center;
+}
+
+.testimonials .title-header, .testimonials .client-testimonials h4{
+  font-size: 1.115rem;
+  font-weight: normal;
+}
+
+.testimonials .client-testimonials img{
+  border-radius: 50%;
+  transform: scale(0.5);
+}
+
+.review{
+  font-size: 1.1rem;
+  color: var(--very-dark-greyish-blue);
+}
+
+.testimonials .client-testimonials h4{
+  margin-top: 2rem;
+  color: var(--dark-desaturated-blue);
+}
+
+.testimonials .client-testimonials .title{
+  color: var(--greyish-blue);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.image-gallery{
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.image-gallery img{
+  width: 100%;
+}
 
 @media (max-width: 768px){
   header nav .hamburger-icon{
@@ -273,6 +338,13 @@ section h2{
   .more-features .content{
     width: 70%;
   }
+
+  .testimonials .client-testimonials{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 425px){  
   header{
@@ -297,6 +369,9 @@ section h2{
     font-size: 1.7rem;
   }
   .more-features .content{
+    width: 90%;
+  }
+  .testimonials .client-testimonials{
     width: 90%;
   }
 }
