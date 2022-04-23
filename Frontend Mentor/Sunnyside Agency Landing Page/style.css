@@ -280,6 +280,43 @@ section h2{
   width: 100%;
 }
 
+footer{
+  background-color: var(--dark-moderate-cyan);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--dark-desaturated-cyan);
+  transition: 0.5s;
+}
+
+footer a:hover{
+  color: var(--white);
+}
+
+footer .links{
+  margin-top: 2rem;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2.5em;
+  font-size: 1.1rem;
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+
+footer .social-icons span{
+  display: none;
+}
+
 @media (max-width: 768px){
   header nav .hamburger-icon{
     display: block;
@@ -373,6 +410,9 @@ section h2{
   }
   .testimonials .client-testimonials{
     width: 90%;
+  }
+  footer .logo img{
+    transform: scale(1.5);
   }
 }
 @media (max-width: 375px){
