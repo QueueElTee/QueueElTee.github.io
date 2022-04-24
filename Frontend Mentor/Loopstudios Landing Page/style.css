@@ -54,3 +54,71 @@ span{
 }
 
 
+/* Header Styles */
+header{
+    background-image: url(images/desktop/image-hero.jpg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    background-size: 100% 100%;
+    /* padding-bottom: 15rem; */
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .hamburger-icon{
+    display: none;
+}
+
+.nav .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav .links a{
+    color: var(--white);
+    display: inline-block;
+}
+
+.nav .links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    height: 2px;
+    background: var(--black);
+    transition: width .3s;
+}
+
+.nav .links a:hover::after {
+    width: 50%;
+}
+
+.header__title{
+    margin-top: 5rem;
+    border: 2.5px solid var(--white);
+    padding: 2rem;
+    color: var(--white);
+    /* min-width: 60%;
+    max-width: 100%; */
+    width: 60%;
+}
+
+.header__title h1{
+    font-size: 4rem;
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 425px){
+
+}
