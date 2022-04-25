@@ -76,6 +76,10 @@ header{
     display: none;
 }
 
+.nav .hamburger-icon .bars, .nav .hamburger-icon .close{
+    display: none;
+}
+
 .nav .links{
     display: flex;
     gap: 2rem;
@@ -106,8 +110,6 @@ header{
     border: 2.5px solid var(--white);
     padding: 2rem;
     color: var(--white);
-    /* min-width: 60%;
-    max-width: 100%; */
     width: 60%;
 }
 
@@ -115,10 +117,93 @@ header{
     font-size: 4rem;
 }
 
-@media(max-width: 768px){
+@media(max-width: 1120px){
+    .header__title{
+        width: 85%;
+    }
+    .nav .links{
+        gap: 1.5rem;
+    }
+}
 
+@media(max-width: 768px){
+    .container{
+        width: 90%;
+    }
+
+    header{
+        padding-top: 1.5rem;
+    }
+
+    .header__title{
+        width: 100%;
+    }
+    .header__title h1{
+        font-size: 2.5rem;
+    }
+
+    .nav .links{
+        display: none;
+    }
+    .nav .hamburger-icon{
+        display: block;
+        color: var(--white);
+    }
+    .nav .hamburger-icon .bars{
+        display: inline-block;
+    }
+    .navControl.responsive{
+        padding: 0;
+    }
+    .navControl.responsive .container{
+        width: 100%;
+        background-color: var(--black);
+    }
+    .navControl.responsive .container .nav{
+        align-items: start;
+        width: 90%;
+        margin: 0 auto;
+        /* Make sure it also matches the normal padding of the page */
+        padding-top: 1.5rem; 
+        height: 100vh;
+    }
+    .navControl.responsive .container .nav .hamburger-icon .bars{
+        display: none;
+    }
+    .navControl.responsive .container .nav .hamburger-icon .close{
+        display: inline-block;
+    }
+    .navControl.responsive .container .nav .links{
+        display: block;
+        width: 100%;
+        background-color: var(--black);
+        color: var(--white);
+        margin-top: 10rem;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-family: var(--ff-secondary);
+        position: absolute;
+    }
+    .navControl.responsive .container .nav .links>*:not(:last-child){
+        margin-bottom: 1rem;
+    }
 }
 
 @media(max-width: 425px){
-
+    .nav .logo img{
+        width: 125px;
+        height: 25px;
+    }
+    header{
+        background-image: url(images/mobile/image-hero.jpg);
+        padding-bottom: 15rem;
+    }
+    .header__title{
+        padding: 1rem;
+        margin-top: 8rem;
+    }
+    .header__title h1{
+        font-size: 2rem;
+    }
 }

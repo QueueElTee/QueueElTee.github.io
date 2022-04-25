@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/f6fb301c7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header  class="navControl" id="navControl">
     <div class="container">
       <nav class="nav" id="nav">
         <a href="#" class="logo">
@@ -26,7 +26,8 @@
           <li><a href="#">Support</a></li>
         </ul>
         <a href="javascript:void(0);" class="hamburger-icon" onclick="navFunction()">
-          <i class="fa fa-bars fa-2x"></i>
+          <i class="fa fa-bars fa-2x bars"></i>
+          <i class="fa-solid fa-xmark fa-2x close"></i>
         </a>
       </nav>
       <div class="header__title">
