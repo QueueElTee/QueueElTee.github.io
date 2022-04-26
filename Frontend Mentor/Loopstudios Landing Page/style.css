@@ -34,6 +34,7 @@ html{
 h1, h2, h3{
     font-family: var(--ff-secondary);
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 a{
@@ -117,12 +118,78 @@ header{
     font-size: 4rem;
 }
 
+
+/* Interactive Section Styles */
+.interactive{
+    margin-top: 5rem;
+}
+
+.interactive .row{
+    display: flex;
+    /* border: 2px solid brown; */
+}
+
+.interactive__img{
+    width: 55%;
+}
+.interactive__text{
+    width: 45%;
+    align-self: flex-end;
+    z-index: 1;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    transform: translateX(-20%);
+    background-color: var(--white);
+    overflow-x: visible;
+}
+
+.interactive__text{
+    position: absolute;
+    right: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.interactive__text p{
+    margin-top: 1rem;
+    color: var(--dark-grey);
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+
+/* Creation Section Styles */
+.creations{
+    margin-top: 5rem;
+}
+
+/* Media Queries */
 @media(max-width: 1120px){
     .header__title{
         width: 85%;
     }
     .nav .links{
         gap: 1.5rem;
+    }
+}
+
+@media(max-width: 1065px){
+    .interactive .row{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .interactive__img{
+        width: 100%;
+    }
+    .interactive__text{
+        position: relative;
+        transform: none;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -188,6 +255,9 @@ header{
     .navControl.responsive .container .nav .links>*:not(:last-child){
         margin-bottom: 1rem;
     }
+    h2{
+        font-size: 2.2rem;
+    }
 }
 
 @media(max-width: 425px){
@@ -205,5 +275,8 @@ header{
     }
     .header__title h1{
         font-size: 2rem;
+    }
+    h2{
+        font-size: 1.9rem;
     }
 }
