@@ -62,7 +62,7 @@ header{
     background-repeat: no-repeat;
     /* width: 100%; */
     padding-top: 2.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     background-size: 100% 100%;
     /* padding-bottom: 15rem; */
   }
@@ -165,6 +165,84 @@ h2 {
     margin-top: 5rem;
 }
 
+.creations__text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    border: 1px solid var(--black);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+    transition:background-color 0.5s ease-in-out;
+}
+
+.btn-parent{
+    display: none;
+}
+
+.btn:hover{
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.creations__gallery{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.creations__gallery>*{
+    background-repeat: no-repeat;
+    padding-top: 22rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    background-size: 100% 100%;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+.creations__gallery>*:hover{
+    color: var(--black);
+    filter: grayscale(40%);
+}
+
+.creations__gallery h3{
+    font-size: 1.8rem;
+}
+
+/* Image Gallery Styles */
+.creations__gallery .earth{
+    background-image: url(images/desktop/image-deep-earth.jpg);
+}
+.creations__gallery .arcade{
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+.creations__gallery .soccer{
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+.creations__gallery .grid{
+    background-image: url(images/desktop/image-grid.jpg);
+}
+.creations__gallery .up-above{
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+.creations__gallery .pocket{
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+.creations__gallery .curiosity{
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+.creations__gallery .fisheye{
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+
 /* Media Queries */
 @media(max-width: 1120px){
     .header__title{
@@ -230,7 +308,6 @@ h2 {
         align-items: start;
         width: 90%;
         margin: 0 auto;
-        /* Make sure it also matches the normal padding of the page */
         padding-top: 1.5rem; 
         height: 100vh;
     }
@@ -258,6 +335,17 @@ h2 {
     h2{
         font-size: 2.2rem;
     }
+    .creations__text{
+        justify-content: space-around;
+    }
+    .btn-laptop{
+        display: none;
+    }
+    .btn-parent{
+        display: block;
+        text-align: center;
+        margin-top: 1.15rem;
+    }
 }
 
 @media(max-width: 425px){
@@ -278,5 +366,45 @@ h2 {
     }
     h2{
         font-size: 1.9rem;
+    }
+
+    .creations__gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .creations__gallery>*{
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .creations__gallery h3{
+        font-size: 1.5rem;
+    }
+
+    /* Image Gallery Styles */
+    .creations__gallery .earth{
+        background-image: url(images/mobile/image-deep-earth.jpg);
+    }
+    .creations__gallery .arcade{
+        background-image: url(images/mobile/image-night-arcade.jpg);
+    }
+    .creations__gallery .soccer{
+        background-image: url(images/mobile/image-soccer-team.jpg);
+    }
+    .creations__gallery .grid{
+        background-image: url(images/mobile/image-grid.jpg);
+    }
+    .creations__gallery .up-above{
+        background-image: url(images/mobile/image-from-above.jpg);
+    }
+    .creations__gallery .pocket{
+        background-image: url(images/mobile/image-pocket-borealis.jpg);
+    }
+    .creations__gallery .curiosity{
+        background-image: url(images/mobile/image-curiosity.jpg);
+    }
+    .creations__gallery .fisheye{
+        background-image: url(images/mobile/image-fisheye.jpg);
     }
 }
