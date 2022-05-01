@@ -399,6 +399,9 @@ footer .copyright{
     .navControl.responsive .container{
         width: 100%;
         background-color: var(--black);
+        position: fixed;
+        top: 0;
+        z-index: 2;
     }
     .navControl.responsive .container .nav{
         align-items: start;
