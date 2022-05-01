@@ -213,6 +213,10 @@ h2 {
     filter: grayscale(40%);
 }
 
+.hover-blue:hover{
+    color: blue;
+}
+
 .creations__gallery h3{
     font-size: 1.8rem;
 }
