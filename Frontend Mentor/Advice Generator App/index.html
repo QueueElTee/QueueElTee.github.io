@@ -12,12 +12,14 @@
 <body>
   <section class="advice-container">
     <div class="container">
-      <p>Advice #<span id="advice-id">117</span></p>
+      <p class="advice-id">Advice #<span id="advice-id">117</span></p>
       <h4 class="advice" id="advice">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h4>
-      <img src="images/pattern-divider-desktop.svg" alt="pattern divider">
-      <button class="dice-container" onclick="getQuote()">
-        <img src="images/icon-dice.svg" alt="dice-icon">
-      </button>
+      <img class="pattern-divider" src="images/pattern-divider-desktop.svg" alt="pattern divider">
+      <div class="dice-container-parent">
+        <button class="dice-container" onclick="getQuote()">
+          <img class="dice-icon" src="images/icon-dice.svg" alt="dice-icon">
+        </button>
+      </div>
     </div>
   </section>
   <script src="index.js"></script>

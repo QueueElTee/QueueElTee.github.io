@@ -9,5 +9,5 @@ async function getQuote(){
     let advice = data.slip["advice"];
 
     document.getElementById("advice-id").innerHTML = advice_id;
-    document.getElementById("advice").innerHTML = advice;
+    document.getElementById("advice").innerHTML = `"${advice}"`;
 }
